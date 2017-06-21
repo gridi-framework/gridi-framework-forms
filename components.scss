@@ -1,0 +1,6 @@
+form {
+    display: block;
+    @include include-element-margin($form-margin-top, $form-margin-bottom, $form-margin-left, $form-margin-right, $form-margin-for-screens);
+    border: 0;
+    padding: 0;
+}

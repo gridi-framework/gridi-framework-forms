@@ -1,0 +1,16 @@
+//Margins
+$form-margin-top: 0 !default;
+$form-margin-bottom: 0 !default;
+$form-margin-left: 0 !default;
+$form-margin-right: 0 !default;
+//Defined margins for each screens.
+$form-margin-for-screens: () !default;
+/*$form-margin-for-screens: (
+    s1: (
+        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
+        bottom: 20px,
+        left: 20px,
+        right: 20px,
+    ),
+    ...
+) !default;*/
