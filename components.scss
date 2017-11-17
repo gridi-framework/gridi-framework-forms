@@ -1,6 +1,54 @@
 form {
-    display: block;
-    @include include-element-margin($form-margin-top, $form-margin-bottom, $form-margin-left, $form-margin-right, $form-margin-for-screens);
-    border: 0;
-    padding: 0;
+    display: $form-display;
+    @include margin-shorthand-with-screens-support((
+        top: $form-margin-top,
+        bottom: $form-margin-bottom,
+        left: $form-margin-left,
+        right: $form-margin-right
+    ), $form-margin-for-screens);
+    @include outline-shorthand((
+        width: $form-outline-width,
+        style: $form-outline-style,
+        color: $form-outline-color,
+        make-shorthand: true
+    ));
+    @include border-shorthand((
+        border: (
+            width: $form-border-width,
+            style: $form-border-style,
+            color: $form-border-color,
+            make-shorthand: true
+        ),
+        border-top: (
+            width: $form-border-top-width,
+            style: $form-border-top-style,
+            color: $form-border-top-color,
+            make-shorthand: $form-border-top-make-shorthand
+        ),
+        border-bottom: (
+            width: $form-border-bottom-width,
+            style: $form-border-bottom-style,
+            color: $form-border-bottom-color,
+            make-shorthand: $form-border-bottom-make-shorthand
+        ),
+        border-left: (
+            width: $form-border-left-width,
+            style: $form-border-left-style,
+            color: $form-border-left-color,
+            make-shorthand: $form-border-left-make-shorthand
+        ),
+        border-right: (
+            width: $form-border-right-width,
+            style: $form-border-right-style,
+            color: $form-border-right-color,
+            make-shorthand: $form-border-right-make-shorthand
+        )
+    ));
+    @include padding-shorthand((
+        top: $form-padding-top,
+        bottom: $form-padding-bottom,
+        left: $form-padding-left,
+        right: $form-padding-right
+    ));
+    @include form-extra-style();
 }

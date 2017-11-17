@@ -1,16 +1,47 @@
+$form-display: block;
+
 //Margins
-$form-margin-top: 0 !default;
-$form-margin-bottom: 0 !default;
-$form-margin-left: 0 !default;
-$form-margin-right: 0 !default;
-//Defined margins for each screens.
-$form-margin-for-screens: () !default;
-/*$form-margin-for-screens: (
-    s1: (
-        top: 20px, //Not required. Define only the margins values you want to change. Example - s2: ( top: 20px ) - change only top margin for screens greater than s2
-        bottom: 20px,
-        left: 20px,
-        right: 20px,
-    ),
-    ...
-) !default;*/
+$form-margin-top: $elements-margin-top !default;
+$form-margin-bottom: $elements-margin-bottom !default;
+$form-margin-left: $elements-margin-left !default;
+$form-margin-right: $elements-margin-right !default;
+$form-margin-for-screens: $elements-margin-for-screens !default;
+
+//Outline
+$form-outline-width: 0 !default;
+$form-outline-style: null !default;
+$form-outline-color: null !default;
+
+//Borders
+$form-border-width: 0 !default;
+$form-border-style: null !default;
+$form-border-color: null !default;
+
+$form-border-top-width: null !default;
+$form-border-top-style: null !default;
+$form-border-top-color: null !default;
+$form-border-top-make-shorthand: false !default;
+
+$form-border-bottom-width: null !default;
+$form-border-bottom-style: null !default;
+$form-border-bottom-color: null !default;
+$form-border-bottom-make-shorthand: false !default;
+
+$form-border-left-width: null !default;
+$form-border-left-style: null !default;
+$form-border-left-color: null !default;
+$form-border-left-make-shorthand: false !default;
+
+$form-border-right-width: null !default;
+$form-border-right-style: null !default;
+$form-border-right-color: null !default;
+$form-border-right-make-shorthand: false !default;
+
+//Paddings
+$form-padding-top: 0 !default;
+$form-padding-bottom: 0 !default;
+$form-padding-left: 0 !default;
+$form-padding-right: 0 !default;
+
+//Extra style
+@mixin form-extra-style() {}
