@@ -16,26 +16,7 @@ $form-outline-color: null !default;
 $form-border-width: 0 !default;
 $form-border-style: null !default;
 $form-border-color: null !default;
-
-$form-border-top-width: null !default;
-$form-border-top-style: null !default;
-$form-border-top-color: null !default;
-$form-border-top-make-shorthand: false !default;
-
-$form-border-bottom-width: null !default;
-$form-border-bottom-style: null !default;
-$form-border-bottom-color: null !default;
-$form-border-bottom-make-shorthand: false !default;
-
-$form-border-left-width: null !default;
-$form-border-left-style: null !default;
-$form-border-left-color: null !default;
-$form-border-left-make-shorthand: false !default;
-
-$form-border-right-width: null !default;
-$form-border-right-style: null !default;
-$form-border-right-color: null !default;
-$form-border-right-make-shorthand: false !default;
+$form-borders: () !default;
 
 //Paddings
 $form-padding-top: 0 !default;

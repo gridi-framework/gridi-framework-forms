@@ -12,38 +12,14 @@ form {
         color: $form-outline-color,
         make-shorthand: true
     ));
-    @include border-shorthand((
+    @include border-shorthand(map-merge((
         border: (
             width: $form-border-width,
             style: $form-border-style,
             color: $form-border-color,
             make-shorthand: true
-        ),
-        border-top: (
-            width: $form-border-top-width,
-            style: $form-border-top-style,
-            color: $form-border-top-color,
-            make-shorthand: $form-border-top-make-shorthand
-        ),
-        border-bottom: (
-            width: $form-border-bottom-width,
-            style: $form-border-bottom-style,
-            color: $form-border-bottom-color,
-            make-shorthand: $form-border-bottom-make-shorthand
-        ),
-        border-left: (
-            width: $form-border-left-width,
-            style: $form-border-left-style,
-            color: $form-border-left-color,
-            make-shorthand: $form-border-left-make-shorthand
-        ),
-        border-right: (
-            width: $form-border-right-width,
-            style: $form-border-right-style,
-            color: $form-border-right-color,
-            make-shorthand: $form-border-right-make-shorthand
         )
-    ));
+    ), $form-borders));
     @include padding-shorthand((
         top: $form-padding-top,
         bottom: $form-padding-bottom,
