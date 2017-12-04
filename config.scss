@@ -25,4 +25,4 @@ $form-padding-left: 0 !default;
 $form-padding-right: 0 !default;
 
 //Extra style
-@mixin form-extra-style() {}
+@mixin form-extra-style() {} //Create this mixin before import module when you want add some special style for element

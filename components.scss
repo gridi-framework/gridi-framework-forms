@@ -26,5 +26,7 @@ form {
         left: $form-padding-left,
         right: $form-padding-right
     ));
-    @include form-extra-style();
+    @if mixin-exists(form-extra-style) {
+        @include form-extra-style();
+    }
 }
